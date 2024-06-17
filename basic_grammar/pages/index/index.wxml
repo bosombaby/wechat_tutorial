@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<scroll-view class="scrollarea" scroll-y type="list">
+  <view class="container">
+    <text class="title">{{title}}</text>
+    <!-- 导航列表 -->
+    <view class="nav-link">
+      <view class="nav-text" wx:for="{{courseList}}" wx:for-index="idx" wx:key="key">
+        <text bindtap="goLink" data-link="{{item.link}}">{{idx + 1}} {{item.name}}</text>
+      </view>
+    </view>
+  </view>
+</scroll-view>
