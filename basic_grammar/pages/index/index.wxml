@@ -1,7 +1,7 @@
 <!--index.wxml-->
-<scroll-view class="scrollarea" scroll-y type="list">
+<scroll-view class="scrollarea" scroll-y type="list" enable-flex>
   <view class="container">
-    <text class="title">{{title}}</text>
+    <text class="first-level-title">{{title}}</text>
     <!-- 导航列表 -->
     <view class="nav-link">
       <view class="nav-text" wx:for="{{courseList}}" wx:for-index="idx" wx:key="key">

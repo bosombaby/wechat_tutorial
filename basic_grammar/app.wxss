@@ -1,4 +1,9 @@
-/**布局容器**/
+.scrollarea {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .container {
   height: 100%;
   display: flex;
@@ -8,4 +13,38 @@
   margin: 0 30rpx;
   box-sizing: border-box;
   background-color: rgba(204, 204, 204, 0.616);
+}
+
+.first-level-title {
+  font-size: 40rpx;
+  font-weight: 700;
+}
+
+.second-level-title {
+  font-size: 30rpx;
+  font-weight: 700;
+}
+
+/* flex 相关样式 */
+.flex-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-ac {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-bc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  width: 160rpx !important;
+  padding: 8rpx 12rpx;
 }

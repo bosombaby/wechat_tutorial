@@ -1,5 +1,9 @@
 {
-  "pages": ["pages/index/index", "pages/template_render/template_render"],
+  "pages": [
+    "pages/index/index",
+    "pages/template_render/template_render",
+    "pages/command_component/command_component"
+  ],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "Weixin",
