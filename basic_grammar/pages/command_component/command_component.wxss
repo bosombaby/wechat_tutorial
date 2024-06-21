@@ -1,0 +1,27 @@
+.movable-area {
+  width: 200rpx;
+  height: 200rpx;
+  background-color: pink;
+}
+
+.movable-view {
+  width: 50rpx;
+  height: 50rpx;
+  background-color: skyblue;
+}
+
+.poup-content {
+  width: 100%;
+  height: 400rpx;
+  background-color: pink;
+}
+
+.scroll-view-list {
+  width: 500rpx;
+  height: 300rpx;
+  background-color: pink;
+}
+
+.scroll-view-item {
+  height: 300rpx;
+}
