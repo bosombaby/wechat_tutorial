@@ -8,6 +8,11 @@ Page({
     courseList: [
       {
         key: "template_render_grammar",
+        name: "常见组件学习",
+        link: "/pages/template_render/template_render",
+      },
+      {
+        key: "template_render_grammar",
         name: "模板渲染语法",
         link: "/pages/template_render/template_render",
       },
