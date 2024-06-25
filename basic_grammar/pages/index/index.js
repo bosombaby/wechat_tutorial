@@ -25,6 +25,11 @@ Page({
         name: "网络请求",
         link: "/pages/network_request/index",
       },
+      {
+        key: "other_npm",
+        name: "外部组件",
+        link: "/pages/other_npm/index",
+      },
     ],
   },
   goLink(e) {

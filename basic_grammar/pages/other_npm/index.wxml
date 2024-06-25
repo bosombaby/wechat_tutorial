@@ -1,0 +1,8 @@
+<scroll-view class="scrollarea" scroll-y type="list" enable-flex>
+  <view class="container">
+    <view class="flex-card">
+      <text class="first-level-title">外部组件</text>
+      <van-button type="primary"> button</van-button>
+    </view>
+  </view>
+</scroll-view>

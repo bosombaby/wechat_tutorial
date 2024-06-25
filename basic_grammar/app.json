@@ -4,15 +4,18 @@
     "pages/template_render/index",
     "pages/command_component/index",
     "pages/event_system/index",
-    "pages/network_request/index"
+    "pages/network_request/index",
+    "pages/other_npm/index"
   ],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "微信小程序教程",
     "navigationBarBackgroundColor": "#ffffff"
   },
-  "style": "v2",
   "componentFramework": "glass-easel",
   "sitemapLocation": "sitemap.json",
-  "lazyCodeLoading": "requiredComponents"
+  "lazyCodeLoading": "requiredComponents",
+  "usingComponents": {
+    "van-button": "/miniprogram/miniprogram_npm/@vant/weapp/button/index"
+  }
 }
