@@ -1,0 +1,4 @@
+<template name="header">
+  <text style="color: red;"> 头部区域模板 {{score}}</text>
+</template>
+<view>头部区域</view>

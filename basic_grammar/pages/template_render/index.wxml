@@ -1,0 +1,61 @@
+<scroll-view class="scrollarea" scroll-y type="list" enable-flex>
+  <view class="container">
+    <view class="flex-card">
+      <text class="first-level-title">模板语法</text>
+      <view>
+        <text class="second-level-title">1.数据绑定</text>
+        <view>{{message}}</view>
+        <input model:value="{{num}}" class="input-num" />
+        <view>{{num}}</view>
+      </view>
+
+      <view>
+        <text class="second-level-title">2.列表渲染</text>
+        <view wx:for="{{arrayList}}" wx:key="id" wx:for-index="idx" wx:for-item="myItem">
+          {{idx}} -- {{myItem.content}}
+        </view>
+      </view>
+
+      <view>
+        <text class="second-level-title">3.条件渲染</text>
+        <input model:value="{{score}}" class="input-num" />
+        <view wx:if="{{score >= 90}}"> 优秀 </view>
+        <view wx:elif="{{ score >= 70}}"> 良好 </view>
+        <view wx:elif="{{ score >= 60}}"> 及格 </view>
+        <view wx:else> 不及格 </view>
+
+        <block wx:if="{{true}}">
+          <view hidden> view1 </view>
+          <view wx:if="{{false}}"> view2 </view>
+          <view> view3 </view>
+        </block>
+      </view>
+
+      <view>
+        <text class="second-level-title">4.模板引用</text>
+        <template name="odd">
+          <view>{{item}} is 奇数 </view>
+        </template>
+        <template name="even">
+          <view>{{item}} is 偶数 </view>
+        </template>
+
+        <block wx:for="{{[1, 2, 3, 4, 5]}}" wx:key="*this">
+          <template is="{{item % 2 == 0 ? 'even' : 'odd'}}" data="{{item}}" />
+        </block>
+      </view>
+
+      <view>
+        <text class="second-level-title">5.模板导入</text>
+        <view>
+          <import src="./header.wxml" />
+          <template is="header" data="{{score}}" />
+        </view>
+
+        <include src="./header.wxml" />
+        <div>这里是内容区域</div>
+        <include src="./footer.wxml" />
+      </view>
+    </view>
+  </view>
+</scroll-view>

@@ -1,6 +1,6 @@
 <scroll-view class="scrollarea" scroll-y type="list" enable-flex>
   <view class="container">
-    <view class="flex-ac" style="flex-direction: column; row-gap: 20rpx;">
+    <view class="flex-card">
       <text class="first-level-title">视图容器</text>
       <view>
         <text class="second-level-title">1.match-media</text>
@@ -10,12 +10,16 @@
         <match-media min-width="1200">
           <view>当页面宽度在 300 ~ 500 px 之间时展示这里</view>
         </match-media>
+      </view>
 
+      <view>
         <text class="second-level-title">2.movable-area</text>
         <movable-area class="movable-area">
           <movable-view x="{{x}}" y="{{y}}" direction="all" class="movable-view" bindtap="handleAreaMove"></movable-view>
         </movable-area>
+      </view>
 
+      <view>
         <text class="second-level-title">3.page-container</text>
         <page-container show="{{isShowPage}}" position="bottom" bind:afterleave="afterLeave">
           <view class="poup-content">
@@ -23,7 +27,9 @@
           </view>
         </page-container>
         <button type="primary" bindtap="openPageContainer">打开</button>
+      </view>
 
+      <view>
         <text class="second-level-title">4.scroll-view</text>
         <scroll-view scroll-y="true" class="scroll-view-list" scroll-into-view="{{scrollToView}}" scroll-top="{{scrollTop}}" scroll-with-animation="true">
           <view id="demo1" class="scroll-view-item" style="background-color: cadetblue;">1</view>
@@ -34,7 +40,9 @@
           <button type="primary" bindtap="scrollToTop">顶部</button>
           <button type="primary" bindtap="scrollToTarget">特定元素</button>
         </view>
+      </view>
 
+      <view>
         <text class="second-level-title">5.轮播图</text>
         <swiper class="scroll-view-list" indicator-dots="true" autoplay="true" interval="500" circular="true">
           <swiper-item id="demo1" class="scroll-view-item" style="background-color: cadetblue;">1</swiper-item>

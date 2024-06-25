@@ -9,14 +9,18 @@ Page({
       {
         key: "command_component",
         name: "常见组件学习",
-        link: "/pages/command_component/command_component",
+        link: "/pages/command_component/index",
       },
       {
         key: "template_render_grammar",
         name: "模板渲染语法",
-        link: "/pages/template_render/template_render",
+        link: "/pages/template_render/index",
       },
-      {},
+      {
+        key: "event_system",
+        name: "事件系统",
+        link: "/pages/event_system/index",
+      },
     ],
   },
   goLink(e) {

@@ -1,0 +1,4 @@
+<template name="footer">
+  底部区域模板
+</template>
+<view>底部区域</view>
