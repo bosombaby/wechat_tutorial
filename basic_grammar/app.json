@@ -3,11 +3,12 @@
     "pages/index/index",
     "pages/template_render/index",
     "pages/command_component/index",
-    "pages/event_system/index"
+    "pages/event_system/index",
+    "pages/network_request/index"
   ],
   "window": {
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarTitleText": "微信小程序教程",
     "navigationBarBackgroundColor": "#ffffff"
   },
   "style": "v2",

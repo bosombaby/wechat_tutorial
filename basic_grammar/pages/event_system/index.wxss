@@ -1,1 +1,17 @@
-/* pages/event_system/index.wxss */
+#outer {
+  width: 500rpx;
+  height: 500rpx;
+  background-color: pink;
+}
+
+#middle {
+  width: 300rpx;
+  height: 300rpx;
+  background-color: skyblue;
+}
+
+#inner {
+  width: 100rpx;
+  height: 100rpx;
+  background-color: slateblue;
+}

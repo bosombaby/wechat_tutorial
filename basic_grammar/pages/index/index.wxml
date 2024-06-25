@@ -5,7 +5,7 @@
     <!-- 导航列表 -->
     <view class="flex-card">
       <view class="nav-text" wx:for="{{courseList}}" wx:for-index="idx" wx:key="key">
-        <text bindtap="goLink" data-link="{{item.link}}">{{idx + 1}} {{item.name}}</text>
+        <text bindtap="myNavigateTo" data-link="{{item.link}}">{{idx + 1}} {{item.name}}</text>
       </view>
     </view>
   </view>

@@ -1,2 +1,39 @@
-<!--pages/event_system/index.wxml-->
-<text>pages/event_system/index.wxml</text>
+<scroll-view class="scrollarea" scroll-y type="list" enable-flex>
+  <view class="container">
+    <view class="flex-card">
+      <text class="first-level-title">事件系统</text>
+      <view>
+        <text class="second-level-title">1.事件绑定</text>
+        <view>
+          <button bind:tap="openDialog">点击弹窗</button>
+        </view>
+      </view>
+
+      <view>
+        <text class="second-level-title">2.避免冒泡</text>
+        <view id="outer" mut-bind:tap="handleTap1">
+          outer view
+          <view id="middle" mut-bind:tap="handleTap2">
+            middle view
+            <view id="inner" bind:tap="handleTap3">
+              inner view
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <view>
+        <text class="second-level-title">3.事件参数</text>
+        <view id="outer" data-name="outer" data-msg="hello" bind:tap="handleTap4">
+          outer view
+          <view id="middle">
+            middle view
+            <view id="inner">
+              inner view
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

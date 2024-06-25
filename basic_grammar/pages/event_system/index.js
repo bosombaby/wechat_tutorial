@@ -1,66 +1,27 @@
-// pages/event_system/index.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
-  data: {
-
+  data: {},
+  openDialog() {
+    const pages = getCurrentPages();
+    console.log("链接跳转", pages);
+    wx.showToast({
+      title: "打开成功",
+      icon: "success",
+      duration: 2000,
+    });
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad(options) {
-
+  handleTap1() {
+    console.log("outer");
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady() {
-
+  handleTap2() {
+    console.log("middle");
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
-
+  handleTap3() {
+    console.log("inner");
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide() {
-
+  handleTap4(event) {
+    const name = event.currentTarget.dataset.name;
+    const msg = event.currentTarget.dataset.msg;
+    console.log("outer", event);
+    console.log(name, msg);
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage() {
-
-  }
-})
+});
