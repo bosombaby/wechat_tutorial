@@ -1,0 +1,3 @@
+<view>
+  <text>父页面 property 传值 -- {{parentName}}</text>
+</view>

@@ -1,0 +1,5 @@
+.my-component {
+  width: 500rpx;
+  height: 500rpx;
+  background-color: pink;
+}

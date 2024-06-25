@@ -26,6 +26,11 @@ Page({
         link: "/pages/network_request/index",
       },
       {
+        key: "data_relate",
+        name: "数据通信",
+        link: "/pages/data_relate/index",
+      },
+      {
         key: "other_npm",
         name: "外部组件",
         link: "/pages/other_npm/index",

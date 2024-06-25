@@ -58,3 +58,7 @@ button {
   width: 160rpx !important;
   padding: 8rpx 12rpx;
 }
+
+.my-component-class {
+  background-color: red;
+}

@@ -1,0 +1,11 @@
+<scroll-view class="scrollarea" scroll-y type="list" enable-flex>
+  <view class="container">
+    <view class="flex-card">
+      <text class="first-level-title">数据通信</text>
+      <view>
+        <text class="second-level-title">1.父 => 子</text>
+        <ty-child-a parentName="{{name}}" />
+      </view>
+    </view>
+  </view>
+</scroll-view>

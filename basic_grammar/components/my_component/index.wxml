@@ -1,0 +1,6 @@
+<view class="my-component">
+  <slot name="before"></slot>
+  <text class="my-component-class">{{parentName}} -- {{childName}}</text>
+  <slot name="after"></slot>
+  <slot></slot>
+</view>

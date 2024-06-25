@@ -10,6 +10,7 @@ Page({
     scrollTop: 0,
     scrollToView: "demo1",
   },
+
   handleAreaMove() {
     if (this.data.x) {
       this.setData({

@@ -5,7 +5,8 @@
     "pages/command_component/index",
     "pages/event_system/index",
     "pages/network_request/index",
-    "pages/other_npm/index"
+    "pages/other_npm/index",
+    "pages/data_relate/index"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -16,6 +17,9 @@
   "sitemapLocation": "sitemap.json",
   "lazyCodeLoading": "requiredComponents",
   "usingComponents": {
-    "van-button": "/miniprogram/miniprogram_npm/@vant/weapp/button/index"
+    "van-button": "/miniprogram/miniprogram_npm/@vant/weapp/button/index",
+    "my-component": "/components/my_component/index",
+    "ty-child-a": "/components/ty_child_a/index",
+    "ty-child-b": "/components/ty_child_b/index"
   }
 }
