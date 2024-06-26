@@ -11,4 +11,15 @@ Page({
     ],
     score: 95,
   },
+  onShow() {
+    const pages = getCurrentPages();
+    console.log("当前数据", pages);
+  },
+
+  openURL(e) {
+    const link = e.currentTarget.dataset.link;
+    wx.navigateTo({
+      url: link,
+    });
+  },
 });

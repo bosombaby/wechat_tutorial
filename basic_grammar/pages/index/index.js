@@ -73,8 +73,9 @@ Page({
    */
   onShow: function () {
     console.log("Page Index onShow");
+    const pages = getCurrentPages();
+    console.log("当前数据", pages);
   },
-
   /**
    * 生命周期函数--监听页面隐藏
    */

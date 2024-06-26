@@ -55,7 +55,7 @@
 }
 
 button {
-  width: 160rpx !important;
+  width: 180rpx !important;
   padding: 8rpx 12rpx;
 }
 

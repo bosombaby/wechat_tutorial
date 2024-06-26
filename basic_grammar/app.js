@@ -18,7 +18,6 @@ App({
   globalData: {
     userInfo: null,
   },
-
   onShow() {
     console.log("App onShow");
   },

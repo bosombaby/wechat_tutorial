@@ -1,7 +1,7 @@
 <scroll-view class="scrollarea" scroll-y type="list" enable-flex>
   <view class="container">
     <view class="flex-card">
-      <text class="first-level-title">视图容器</text>
+      <text class="first-level-title">常见组件学习</text>
       <view>
         <text class="second-level-title">1.match-media</text>
         <match-media min-width="300" max-width="600">
@@ -60,5 +60,7 @@
         </my-component>
       </view>
     </view>
+
+    <van-button type="primary" data-link="/pages/template_render/index" bind:tap="openURL">模板渲染</van-button>
   </view>
 </scroll-view>

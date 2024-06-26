@@ -10,7 +10,6 @@ Page({
     scrollTop: 0,
     scrollToView: "demo1",
   },
-
   handleAreaMove() {
     if (this.data.x) {
       this.setData({
@@ -42,6 +41,14 @@ Page({
       scrollToView: "demo3",
     });
   },
+
+  openURL(e) {
+    const link = e.currentTarget.dataset.link;
+
+    wx.navigateTo({
+      url: link,
+    });
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -61,6 +68,8 @@ Page({
    */
   onShow: function () {
     console.log("Page First onShow");
+    const pages = getCurrentPages();
+    console.log("当前数据", pages);
   },
 
   /**

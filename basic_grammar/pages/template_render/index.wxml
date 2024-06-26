@@ -57,5 +57,7 @@
         <include src="./footer.wxml" />
       </view>
     </view>
+
+    <van-button type="primary" data-link="/pages/command_component/index" bind:tap="openURL">常见组件</van-button>
   </view>
 </scroll-view>
