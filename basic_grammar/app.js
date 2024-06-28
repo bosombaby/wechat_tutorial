@@ -17,7 +17,10 @@ App({
   },
   globalData: {
     userInfo: null,
+    appName: "微信小程序教程",
   },
+  appName: "111",
+
   onShow() {
     console.log("App onShow");
   },

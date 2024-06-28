@@ -20,6 +20,7 @@ Component({
       console.log("component attached");
     },
     ready: function () {
+      this.triggerEvent("send-msg", { id: 111, content: "这里是子组件的内容" });
       console.log("component ready");
     },
     moved: function () {

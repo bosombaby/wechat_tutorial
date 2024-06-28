@@ -46,8 +46,19 @@ Page({
     const link = e.currentTarget.dataset.link;
 
     wx.navigateTo({
-      url: link,
+      url: link + "?a=1&b=2",
+      events: {
+        calculateResult(data) {
+          console.log("计算的结果为", data);
+        },
+      },
+      success: function (res) {
+        res.eventChannel.emit("multiplication", { result: 100 });
+      },
     });
+  },
+  sendMsg(data) {
+    console.log("来自子组件的数据", data);
   },
   /**
    * 生命周期函数--监听页面加载
@@ -70,6 +81,15 @@ Page({
     console.log("Page First onShow");
     const pages = getCurrentPages();
     console.log("当前数据", pages);
+
+    const storageData = wx.getStorageSync("index-data");
+    if (storageData) {
+      console.log("当前存储的数据", storageData);
+    }
+
+    // 获取子组件实例
+    const child = this.selectComponent("#my-component");
+    console.log("子组件实例", child);
   },
 
   /**

@@ -1,3 +1,5 @@
+const app = getApp();
+
 Page({
   /**
    * 页面的初始数据
@@ -75,6 +77,9 @@ Page({
     console.log("Page Index onShow");
     const pages = getCurrentPages();
     console.log("当前数据", pages);
+
+    wx.setStorageSync("index-data", "哈哈哈哈");
+    console.log("APP全局数据", app);
   },
   /**
    * 生命周期函数--监听页面隐藏

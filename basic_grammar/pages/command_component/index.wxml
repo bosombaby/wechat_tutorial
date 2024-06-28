@@ -53,7 +53,7 @@
 
       <view>
         <text class="second-level-title">6.自定义组件</text>
-        <my-component parentName="常见组件学习">
+        <my-component id="my-component" parentName="常见组件学习" bind:send-msg="sendMsg">
           <view slot="before">组件slot name="before"</view>
           <view slot="after">组件slot name="after"</view>
           <view style="color:cornflowerblue">我是单个插槽</view>
