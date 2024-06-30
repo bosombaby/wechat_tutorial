@@ -2,6 +2,7 @@
   <view class="container">
     <view class="flex-card">
       <text class="first-level-title">网络请求</text>
+      <van-button bind:tap="getSystemId">获取ID</van-button>
     </view>
   </view>
 </scroll-view>
