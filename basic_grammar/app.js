@@ -1,27 +1,19 @@
-// app.js
+import cloud from 'wx-server-sdk'
 App({
   onLaunch() {
-    // 展示本地存储能力
-    const logs = wx.getStorageSync("logs") || [];
-    logs.unshift(Date.now());
-    wx.setStorageSync("logs", logs);
-
-    // 登录
+    wx.cloud.init({
+      env:'cloud1-2gooj1ea41d1f3f7',
+      traceUser:true
+    })
     wx.login({
       success: (res) => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
       },
     });
-
-    console.log("App onLaunch");
   },
   globalData: {
     userInfo: null,
     appName: "微信小程序教程",
   },
-  appName: "111",
-
-  onShow() {
-    console.log("App onShow");
-  },
+  appName: "微信小程序教程",
 });

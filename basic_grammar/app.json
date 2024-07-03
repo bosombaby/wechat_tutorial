@@ -6,7 +6,8 @@
     "pages/event_system/index",
     "pages/network_request/index",
     "pages/other_npm/index",
-    "pages/data_relate/index"
+    "pages/data_relate/index",
+    "pages/cloud_develop/index"
   ],
   "window": {
     "navigationBarTextStyle": "black",
